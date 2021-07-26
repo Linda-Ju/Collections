@@ -1,11 +1,11 @@
 package com.company.set.homework.students;
 
-public class Students {
+public class Student {
 
     String name;
     float score;
 
-    public Students(String name, float score) {
+    public Student(String name, float score) {
         this.name = name;
         this.score = score;
     }
