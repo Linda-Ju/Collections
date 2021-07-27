@@ -25,4 +25,5 @@ public class Student {
     public void setScore(float score) {
         this.score = score;
     }
+
 }

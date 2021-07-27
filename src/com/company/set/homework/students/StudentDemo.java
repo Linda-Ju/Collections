@@ -27,8 +27,15 @@ public class StudentDemo {
         students.add(new Student("John", 92));
         students.add(new Student("John", 77));
 
+        float tempScore = 0;
+        int position = 0;
         for (int i = 0; i < students.size(); i++) {
-
+            if (students.get(i).getScore() > tempScore) {
+                tempScore = students.get(i).getScore();
+                position = i;
+            }
         }
+        System.out.println("Highest score: " + students.get(position).getName()
+                + " (" + students.get(position).getScore() + ")");
     }
 }
